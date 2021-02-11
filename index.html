@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Gastos</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="cabecera">
+      <span class="logo">Control Gastos</span>
+      <form class="form-filter">
+        <input
+          class="input-filter"
+          type="text"
+          placeholder="Filtracion De Datos"
+          id="filter"
+        />
+      </form>
+    </header>
+
+    <section class="flex-global">
+      <div class="cont-padre">
+        <form class="form-control" id="form-control">
+          <h1>Control De Gastos</h1>
+          <label>Descripcion</label>
+          <input
+            class="input description"
+            type="text"
+            placeholder="Description"
+            id="description"
+            required
+          />
+          <label>Monto</label>
+          <input
+            class="input amount"
+            type="text"
+            required
+            placeholder="Monto"
+            id="price"
+          />
+          <button class="btn bg-btn">Agregar</button>
+        </form>
+
+        <article class="container" id="container"></article>
+      </div>
+      <article class="modal">
+        <form class="form-modal flex-global" id="form-modal">
+          <h2>Monto Inicial</h2>
+          <input class="input" type="text" placeholder="Monto" id="money" />
+          <button class="btn btn-modal">Agregar</button>
+        </form>
+      </article>
+    </section>
+    <span class="monto_total" id="total"></span>
+
+    <script src="app.js"></script>
+  </body>
+</html>
